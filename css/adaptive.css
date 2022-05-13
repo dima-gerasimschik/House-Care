@@ -1,0 +1,534 @@
+/*1024-1199*/
+@media screen and (max-width: 1199px) {
+
+    #example-images .example-container .example-container-image{
+        width: 984px;
+        margin: 0 auto;
+    }
+
+    .main #header, .main #titles, #project, #info .info-container, #instruction .instruction-container, #consultation .consultation-container, #warranty .warranty-container, #example-images .example-container, #entry .entry-container {
+        padding-right: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #footer .footer-container {
+        padding: 50px 20px 115px 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .slick-prev {
+        left: 0px;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: 30px;
+    }
+
+    #warranty-desc .warranty-item {
+        padding: 30px 20px 30px 19px;
+        width: 100%;
+    }
+
+    .projects {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 595px;
+        margin: 125px auto;
+        position: relative;
+    }
+
+    #consultation .consultation-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects .projects-image {
+        margin-bottom: 20px;
+    }
+
+    .text-items-document, .btn-action {
+        text-align: center;
+    }
+
+    #project {
+        padding-top: 0px;
+    }
+
+    .projects .projects-text .text-caption {
+        position: absolute;
+        top: -60px;
+        left: 170px;
+    }
+
+    .projects .projects-text .text-desc {
+        text-align: center;
+    }
+
+
+    .image-info {
+        left: -124px;
+    }
+
+    #consultation .consultation-container #consultation-image {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .info-items:before {
+        display: none;
+    }
+
+    .od {
+        display: flex;
+        position: absolute;
+        top: 270px;
+        left: 115px;
+    }
+
+    .dv {
+        display: flex;
+        position: absolute;
+        top: 450px;
+        left: 155px;
+    }
+
+    .tr {
+        display: flex;
+        position: absolute;
+        top: 600px;
+        left: 250px;
+    }
+
+    .ch {
+        display: flex;
+        position: absolute;
+        top: 440px;
+        left: 425px;
+    }
+
+    .pt {
+        display: flex;
+        position: absolute;
+        top: 290px;
+        left: 475px;
+    }
+
+    #info .info-container {
+        width: 639px;
+    }
+
+    #info .info-container #info-image .info-items {
+        display: none;
+        position: absolute;
+        top: 560px;
+        left: 150px;
+        background-color: rgb(49, 49, 57);
+        padding: 20px;
+        z-index: 1;
+    }
+
+    .info-items .bef {
+        display: block;
+    }
+
+    .bef {
+        content: '';
+        display: none;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        left: 275px;
+        top: 690px;
+        width: 58px;
+        height: 58px;
+        transform: rotate(45deg);
+    }
+
+
+}
+
+/*768-1023*/
+@media screen and (max-width: 1023px) {
+
+    #instruction .instruction-container #instruction-list {
+        justify-content: space-evenly;
+    }
+
+    .image-info {
+        left: 35px;
+    }
+
+    #example-images .example-container .example-container-image{
+        width: 728px;
+        margin: 0 auto;
+    }
+
+}
+
+/*425-767*/
+@media screen and (max-width: 767px) {
+
+    #example-images .example-container .example-container-image{
+        width: 385px;
+        margin: 0 auto;
+    }
+
+    .main #header .logo {
+        margin-left: 0;
+    }
+
+    #header .contact {
+        display: none;
+    }
+
+    #titles .social {
+        display: none;
+    }
+
+    #titles #titles-navigation {
+        display: none;
+    }
+
+    .main #titles #titles-text h1 {
+        font-size: 26px;
+        width: auto;
+    }
+
+    .main #titles #titles-text #titles-desc {
+        font-size: 14px;
+    }
+
+    .btn-action button {
+        font-size: 16px;
+    }
+
+    .main #titles {
+        justify-content: center;
+    }
+
+    .projects {
+        width: 290px;
+    }
+
+    .image-1 img {
+        width: 334px;
+    }
+
+    .image-2 img {
+        width: 100%;
+    }
+
+    .image-3 img {
+        width: 100%;
+    }
+
+    .image-4 img {
+        width: 100%;
+    }
+
+    .projects .projects-text .text-items .text-items-square:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .projects .projects-text .text-items {
+        justify-content: space-between;
+    }
+
+    .projects .projects-text .text-desc {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .projects .projects-text .text-caption {
+        top: -40px;
+        left: 0;
+        font-size: 18px;
+    }
+
+    #project h2, #info .info-container h2, #instruction .instruction-container h2, #example-images .example-container h2, #warranty .warranty-container h2, #consultation .consultation-container #consultation-block h2, #entry .entry-container #entry-excursion #entry-excursion-title {
+        font-size: 30px;
+    }
+
+    .projects .projects-text .text-items .text-items-square {
+        font-size: 15px;
+    }
+
+    .text-items-document a button, #project #project-item #project-item-text {
+        font-size: 15px;
+    }
+
+    #project {
+        padding: 0 0 90px 0;
+    }
+
+    #info-image img, #info .info-container {
+        width: 320px;
+    }
+
+    #instruction .instruction-container #instruction-list .list-cart .list-text .list-text-title, #instruction .instruction-container #instruction-list .list-cart .list-text .list-text-text {
+        font-size: 16px;
+    }
+
+    #instruction .instruction-container #instruction-list .list-cart, #instruction .instruction-container #instruction-list .list-cart:nth-child(n+4) {
+        margin-bottom: 100px;
+    }
+
+    #instruction .instruction-container #instruction-list {
+        padding: 100px 0 0 0;
+    }
+
+    #warranty .warranty-container #warranty-desc {
+        flex-wrap: wrap;
+        margin: 40px 0 20px;
+    }
+
+    #warranty .warranty-container {
+        margin: 40px 0 40px 0;
+    }
+
+    #warranty-desc .warranty-item .item-image-text .item-title, #warranty-list-container .warranty-list .item-image-text .warranty-list-title, #warranty-list-container .warranty-list .item-image-text .warranty-list-text, #entry .entry-container #entry-excursion #entry-excursion-text {
+        font-size: 16px;
+    }
+
+    #warranty-desc .warranty-item .item-image-text .item-text {
+        font-size: 14px;
+    }
+
+    #warranty-desc .warranty-item {
+        padding: 20px 0 20px 20px;
+    }
+
+    #warranty-desc .warranty-item .item-image {
+        margin-right: 20px;
+        align-items: flex-start;
+    }
+
+
+    #warranty .warranty-container #warranty-list-container .warranty-list .warranty-list-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    #warranty-desc .warranty-item .item-image img {
+        width: 35px;
+    }
+
+    #warranty-desc .warranty-item {
+        padding: 20px 76px 20px 20px;
+        margin-bottom: 20px;
+    }
+
+    #warranty-list-container .warranty-list .item-image-text .warranty-list-title {
+        margin-bottom: 20px;
+    }
+
+    #warranty .warranty-container #warranty-list-container .warranty-list {
+        margin-bottom: 40px;
+    }
+
+    #warranty .warranty-container #warranty-list-container {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    #consultation-image {
+        display: none;
+    }
+
+    #entry {
+        padding: 90px 0;
+    }
+
+    #footer .footer-container {
+        flex-flow: column;
+        align-items: center;
+        padding: 50px 20px 85px 20px;
+    }
+
+    #footer .footer-container #address-center {
+        order: 1;
+        margin-right: 0;
+    }
+
+    #footer .footer-container #footer-address {
+        order: 2;
+        margin: 50px 0 55px 0;
+    }
+
+    #footer .footer-container .contact {
+        order: 3;
+    }
+
+    #address-time {
+        text-align: center;
+    }
+
+    #footer .footer-container #footer-address #address-street {
+        margin-bottom: 10px;
+    }
+
+    #footer .footer-container #address-center .social {
+        margin-top: 45px;
+    }
+
+    .od {
+        top: 235px;
+        left: 65px;
+    }
+
+    .dv {
+        top: 331px;
+        left: 85px;
+    }
+
+    .tr {
+        top: 420px;
+        left: 135px;
+    }
+
+    .ch {
+        top: 325px;
+        left: 230px;
+    }
+
+    .pt {
+        top: 245px;
+        left: 265px;
+    }
+
+    .projects .projects-image {
+        grid-template-columns: repeat(3, 105px);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    #instruction .instruction-container #instruction-list .list-cart .list-cart-image img {
+        width: 54px;
+    }
+
+    #example-images .example-container .example-container-image .image-card img {
+        width: 145px;
+    }
+
+    .image-info {
+        width: 293px;
+        left: 5px;
+        padding: 15px;
+    }
+
+    #example-images .example-container .example-container-image .image-info .info-left .info-name, .description {
+        font-size: 14px;
+    }
+
+    .description {
+        width: 96px;
+    }
+
+    #example-images .example-container .example-container-image .image-info .info-left .info-name {
+        margin-bottom: 15px;
+    }
+
+    #example-images .example-container .example-container-image .image-info .info-left {
+        padding-right: 25px;
+        justify-content: space-evenly;
+    }
+
+    #example-images .example-container .example-container-image .image-info .info-right {
+        padding-left: 25px;
+    }
+
+    .title-text {
+        display: none;
+    }
+
+    #info .info-container #info-image .info-items {
+        left: 0;
+        top: 320px;
+    }
+
+    .bef {
+        left: 117px;
+        top: 487px;
+    }
+
+    #entry .entry-container {
+        height: 260px;
+    }
+
+    .logo img {
+        width: 34px;
+    }
+
+    .main {
+        height: 750px;
+    }
+
+}
+
+/*320-425*/
+@media screen and (max-width: 424px) {
+
+    #example-images .example-container .example-container-image{
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    .main #header, .main #titles, #project, #info .info-container, .instruction-container, #example-images .example-container, #warranty .warranty-container, #consultation .consultation-container, #entry .entry-container, #footer .footer-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .consultation-input input, .text-items-document button, .projects .projects-text .btn-action button, .projects .projects-text, #consultation .consultation-container #consultation-block, #consultation .consultation-container #consultation-block button {
+        width: 100%;
+    }
+
+    .image-1 img {
+        width: 297px;
+    }
+
+    .projects .projects-image {
+        grid-template-columns: repeat(3, 90px);
+    }
+
+    .image-2, .image-3, .image-4, img {
+        width: 95px;
+    }
+
+    .projects .projects-text .text-items .text-items-square {
+        width: 85px;
+        height: 85px;
+    }
+
+    .social img {
+        width: 31px;
+    }
+
+    .zvon img {
+        width: 50px;
+    }
+
+    #info .info-container {
+        margin: 0 auto;
+    }
+
+    #info-image img {
+        width: 305px;
+    }
+
+    .image-info {
+        left: -41px;
+    }
+
+    #warranty .warranty-container #warranty-list-container .warranty-list .warranty-list-image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main #menu #menu-container #menu-cancel img {
+        width: 30px;
+    }
+
+}
