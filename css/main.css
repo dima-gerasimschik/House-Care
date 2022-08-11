@@ -48,13 +48,23 @@ body {
     display: none;
 }
 
-.main #menu #menu-container{
+.main #menu #menu-container {
     padding-left: 20px;
 }
 
-.main #menu #menu-container #menu-cancel {
+.main #menu #menu-container .menu-cancel {
     margin: 35px 0 50px 0;
     cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.main #menu #menu-container .menu-cancel:hover {
+    -o-transform: scaleY(1.2);
+        -ms-transform: scaleY(1.2);
+        -moz-transform: scaleY(1.2);
+        -webkit-transform: scaleY(1.2);
+        transform: scaleY(1.2);
+        transition: 0.3s linear;
 }
 
 .main #menu #menu-container .menu-title {
@@ -72,10 +82,13 @@ body {
     text-align: left;
     margin: 30px 0 30px;
     position: relative;
+    transition: 0.3s linear;
 }
 
 .main #menu #menu-container .menu-item:hover {
     margin-left: 15px;
+    transition: 0.3s linear;
+
 }
 
 .main #menu #menu-container .menu-item:hover::before {
@@ -83,6 +96,7 @@ body {
     bottom: 3px;
     left: -15px;
     position: absolute;
+    
 }
 
 .main #menu #menu-container .menu-item a {
@@ -95,6 +109,10 @@ body {
     display: flex;
     align-items: center;
     margin-right: 90px;
+}
+
+.main #menu #menu-container .social div {
+    margin-bottom: 0;
 }
 
 .main #menu #menu-container .social div {
@@ -126,16 +144,36 @@ hr {
     margin: 0;
 }
 
-.main #header #home {
+.main #header .home {
     color: white;
-    font-size: 34px;
+    font-size: 43px;
     line-height: 30px;
     cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.main #header .home:hover {
+    -o-transform: scaleY(1.2);
+        -ms-transform: scaleY(1.2);
+        -moz-transform: scaleY(1.2);
+        -webkit-transform: scaleY(1.2);
+        transform: scaleY(1.2);
+        transition: 0.3s linear;
 }
 
 .main #header .logo {
     text-align: center;
     margin-left: 140px;
+    transition: 0.3s linear;
+}
+
+.main #header .logo:hover {
+    -o-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        -ms-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        -moz-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        -webkit-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        transition: 0.3s linear;
 }
 
 .logo div {
@@ -144,6 +182,10 @@ hr {
     font-family: "Neumann", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1;
+}
+
+.logo a {
+    text-decoration: none;
 }
 
 .contact {
@@ -174,11 +216,33 @@ hr {
     cursor: pointer;
 }
 
+.contact .btn-contact button:before {
+    content: '';
+        position: absolute;
+        top: 31px;
+        left: 5px;
+        width: 0;
+        height: 42px;
+        background: rgb(236 198 107 / 50%);
+        border-radius: 5px;
+        transition: all 0.5s ease;
+}
+
+.contact .btn-contact button:hover:before {
+    width: 100%;
+}
+
 .contact .number {
     font-size: 18px;
     font-family: "Museo Sans Cyrl 700", sans-serif;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
+    transition: 0.3s linear;
+}
+
+.contact .number:hover {
+    color: rgb(236 198 107);
+    transition: 0.3s linear;
 }
 
 .main #titles {
@@ -186,7 +250,7 @@ hr {
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
-    padding-top: 160px;
+    padding-top: 155px;
     padding-bottom: 150px;
 }
 
@@ -214,8 +278,13 @@ hr {
     line-height: 1.2;
     text-align: center;
     width: 553px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     margin: 0;
+    font-weight: normal;
+}
+
+.main #titles #titles-text{
+    text-align: center;
 }
 
 .main #titles #titles-text #titles-desc {
@@ -223,7 +292,7 @@ hr {
     font-family: "Museo Sans Cyrl 700", sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .main #titles #titles-text .btn-action {
@@ -243,6 +312,13 @@ hr {
     text-align: center;
     border: 0;
     cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.btn-action button:hover {
+transition: 0.3s linear;
+            box-shadow: 0px 0px 20px 0px rgb(98 89 68) inset;
+        
 }
 
 .social {
@@ -275,6 +351,7 @@ hr {
     color: rgb(236, 198, 107);
     text-align: center;
     margin: 0;
+    font-weight: normal;
 }
 
 .projects .projects-image {
@@ -371,6 +448,13 @@ hr {
     border-color: rgb(255, 255, 255);
     border-style: solid;
     background: transparent;
+    transition: 0.3s linear;
+}
+
+.text-items-document button:hover {
+    border-color: rgb(236 198 87);
+    color: rgb(236 198 87);
+    transition: 0.3s linear;
 }
 
 .projects:nth-child(odd) {
@@ -380,6 +464,12 @@ hr {
 #project #project-item {
     text-align: center;
     cursor: pointer;
+    transition: 0.3s linear;
+}
+
+#project #project-item:hover {
+        transform: translateY(10px);
+        transition: 0.3s linear;
 }
 
 #project #project-item #project-item-text, #project-item-icon {
@@ -408,6 +498,7 @@ hr {
     color: rgb(236, 198, 107);
     margin: 0;
     padding-bottom: 80px;
+    font-weight: normal;
 }
 
 #info .info-container #info-image {
@@ -507,24 +598,49 @@ hr {
     color: rgb(236, 198, 107);
     text-align: center;
     margin: 0;
+    font-weight: normal;
 }
 
 #instruction .instruction-container #instruction-list {
-    padding: 120px 0;
+    padding: 115px 0 120px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 #instruction .instruction-container #instruction-list .list-cart {
     display: flex;
     margin-bottom: 150px;
-    width: 327px;
+    width: 326px;
     position: relative;
 }
 
 #instruction .instruction-container #instruction-list .list-cart:nth-child(n+4) {
     margin-bottom: 0;
+}
+
+#instruction .instruction-container #instruction-list .list-cart:nth-child(1) {
+    margin-right: 75px;
+}
+
+#instruction .instruction-container #instruction-list .list-cart:nth-child(4) {
+    margin-right: 75px;
+}
+
+#instruction .instruction-container #instruction-list .list-cart:nth-child(2) {
+    margin-right: 75px;
+}
+
+#instruction .instruction-container #instruction-list .list-cart:nth-child(5) {
+    margin-right: 75px;
+}
+
+#instruction .instruction-container #instruction-list .list-cart:nth-child(3) {
+    width: 296px;
+}
+
+#instruction .instruction-container #instruction-list .list-cart:nth-child(6) {
+    width: 296px;
 }
 
 #instruction .instruction-container #instruction-list .list-cart:nth-child(1):before {
@@ -633,6 +749,7 @@ hr {
     color: rgb(236, 198, 107);
     margin: 0;
     text-align: center;
+    font-weight: normal;
 }
 
 #example-images .example-container .example-container-image {
@@ -647,8 +764,8 @@ hr {
     padding: 15px 53px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 48px;
-    left: -88px;
+    bottom: 70px;
+    left: -90px;
     display: none;
     display: flex;
 }
@@ -698,23 +815,23 @@ hr {
     margin-top: 80px;
     margin-bottom: 35px;
     position: relative;
-    width: 299px;
 }
 
-.image-card .slick-slide .slick-current .slick-active .slick-center{
-    width: 299px;
+.image-card .slick-slide .slick-current .slick-active .slick-center {
     position: relative
 }
 
-#example-images .example-container .example-container-image .image-card img {
-    width: 288px;
+.image-card img {
+    width: 228px;
     height: 294px;
-    margin: 33px auto;
+    margin: 60px 0 0 87px;
 }
 
 .slick-center img {
-    transform: scale(2, 1.2);
-    width: 590px;
+    transform: scale(2);
+    width: 288px;
+    height: 205px;
+    margin: 102px 55px;
 }
 
 .slick-center .image-info {
@@ -731,7 +848,12 @@ hr {
 }
 
 .slick-prev {
-    left: -50px;
+    left: 0px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 30px;
 }
 
 .slick-dots li {
@@ -751,7 +873,7 @@ hr {
 }
 
 .slick-dots {
-    bottom: 0px;
+    bottom: 15px;
 }
 
 #warranty {
@@ -769,6 +891,7 @@ hr {
     font-family: "Neumann", sans-serif;
     color: rgb(236, 198, 107);
     margin: 0;
+    font-weight: normal;
 }
 
 #warranty .warranty-container #warranty-desc {
@@ -861,6 +984,7 @@ hr {
 
 #consultation .consultation-container #consultation-block {
     text-align: center;
+    position: relative;
 }
 
 .consultation-text, .entry-text {
@@ -881,10 +1005,15 @@ hr {
     font-family: "Neumann", sans-serif;
     color: rgb(236, 198, 107);
     margin: -10px;
+    font-weight: normal;
 }
 
 #consultation .consultation-container #consultation-block #consultation-form {
     margin-top: 40px;
+}
+
+.consultation-input{
+    position: relative;
 }
 
 .consultation-input input {
@@ -911,21 +1040,40 @@ hr {
 #consultation .consultation-container #consultation-block button {
     width: 407px;
     margin-bottom: 30px;
+    outline: 0;
 }
 
-.consultation-error, .entry-error {
+.consultation-error-1, .consultation-error-2, .consultation-error-3, .entry-error-1, .entry-error-2, .entry-error-3 {
     display: none;
     color: red;
-    font-size: 16px;
-    text-align: center;
+    font-size: 13px;
     width: 100%;
-    margin: 0px 0 25px 0;
     font-family: "Museo Sans Cyrl 300", sans-serif;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
 }
 
-#entry-content .entry-error {
-    margin: 0px 0 25px 20px;
+.consultation-error-1, .consultation-error-2 {
+    left: -133px;
+    bottom: -9px;
 }
+
+.consultation-error-3 {
+    left: -85px;
+    bottom: -20px;
+}
+
+.entry-error-1, .entry-error-2 {
+    left: -132px;
+    bottom: -9px;
+}
+
+.entry-error-3 {
+    left: -85px;
+    bottom: 20px;
+}
+
 
 input[type="checkbox"] {
     display: none;
@@ -1029,6 +1177,16 @@ input:disabled + label:before {
 
 #footer .footer-container #address-center .logo {
     text-align: center;
+    transition: 0.3s linear;
+}
+
+#footer .footer-container #address-center .logo:hover {
+    -o-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        -ms-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        -moz-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        -webkit-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        transition: 0.3s linear;
 }
 
 #footer .footer-container #address-center .social {
@@ -1048,12 +1206,13 @@ input:disabled + label:before {
 }
 
 .social img:hover {
-    opacity: 90%;
+    opacity: 65%;
     cursor: pointer;
 }
 
 #footer .footer-container #address-center {
     margin-right: 90px;
+    text-align: center;
 }
 
 #entry-content .block-title {
@@ -1127,4 +1286,10 @@ input:disabled + label:before {
     height: 56%;
     align-self: center;
     border: 4px solid #25252d;
+}
+
+
+.active-cursor {
+    background-color: rgb(252, 237, 203);
+    box-shadow: 0px 0px 25.5px 4.5px rgba(0, 0, 0, 0.004);
 }
