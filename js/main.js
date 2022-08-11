@@ -6,12 +6,12 @@ $(document).ready(() => {
     });
 
 
-    $("#home").click(function () {
+    $(".home").click(function () {
         $("#menu").css('display', 'block');
     });
 
 
-    $('#menu-cancel-img, #titles, #header').click((e) => {
+    $('.menu-cancel-img, #titles, #header').click((e) => {
         if (e.target.id === 'menu-cancel-img' || e.target.id === 'titles' || e.target.id === 'header') {
             $('#menu').hide();
         }
@@ -34,23 +34,22 @@ $(document).ready(() => {
         phone.css('border-color', 'white');
         text.css('color', 'white');
 
-        $('.consultation-error').hide();
+        $('.consultation-error-1, .consultation-error-2, .consultation-error-3').hide();
 
         if (!name.val()) {
-            name.css('border-color', 'red').css('margin-bottom', '10px');
-            name.siblings('.consultation-error').show();
+            name.css('border-color', 'red');
+            name.siblings('.consultation-error-1').show();
         }
 
         if (!phone.val()) {
-            phone.css('border-color', 'red').css('margin-bottom', '10px');
-            phone.siblings('.consultation-error').show();
+            phone.css('border-color', 'red');
+            phone.siblings('.consultation-error-2').show();
         }
 
         if (!ok.is(":checked") === true) {
             text.css('margin-bottom', '10px').show();
-            ok.siblings('.consultation-error').show();
+            ok.siblings('.consultation-error-3').show();
             $('.checkbox').css('border-color', 'red').show();
-            alert('Дайте свое согласие на обработку данных!');
         }
 
 
@@ -87,23 +86,21 @@ $(document).ready(() => {
         name_entry.css('border-color', 'white');
         phone_entry.css('border-color', 'white');
 
-        $('.entry-error').hide();
+        $('.entry-error-1, .entry-error-2, .entry-error-3').hide();
 
         if (!name_entry.val()) {
-            name_entry.css('border-color', 'red').css('margin-bottom', '10px');
-            name_entry.siblings('.entry-error').show();
+            name_entry.css('border-color', 'red');
+            name_entry.siblings('.entry-error-1').show();
         }
 
         if (!phone_entry.val()) {
-            phone_entry.css('border-color', 'red').css('margin-bottom', '10px');
-            phone_entry.siblings('.entry-error').show();
+            phone_entry.css('border-color', 'red');
+            phone_entry.siblings('.entry-error-2').show();
         }
 
         if (!ok_entry.is(":checked") === true) {
-            text_entry.css('margin-bottom', '10px').show();
-            ok_entry.siblings('.entry-error').show();
+            ok_entry.siblings('.entry-error-3').show();
             $('.checkbox').css('border-color', 'red').show();
-            alert('Дайте свое согласие на обработку данных!');
         }
 
         if (name_entry.val() && phone_entry.val() && ok_entry.is(":checked") === true) {
@@ -132,39 +129,48 @@ $(document).ready(() => {
         }
     })
 
+    $('.bef').show();
+    $('.odd').show();
+    $('.info-items').show();
 
     $('.od').click((e) => {
         $('.info-items').hide();
         $('.odd').show();
         $('.bef').show();
+        $('.od').addClass("active-cursor");
     })
 
     $('.dv').click((e) => {
         $('.info-items').hide();
         $('.dvv').show();
         $('.bef').show();
+        $('.od, .dv, .tr, .ch, .pt').removeClass('active-cursor')
+        $('.dv').addClass("active-cursor");
     })
 
     $('.tr').click((e) => {
         $('.info-items').hide();
         $('.trr').show();
         $('.bef').show();
+        $('.od, .dv, .tr, .ch, .pt').removeClass('active-cursor')
+        $('.tr').addClass("active-cursor");
     })
 
     $('.ch').click((e) => {
         $('.info-items').hide();
         $('.chh').show();
         $('.bef').show();
+        $('.od, .dv, .tr, .ch, .pt').removeClass('active-cursor')
+        $('.ch').addClass("active-cursor");
     })
 
     $('.pt').click((e) => {
         $('.info-items').hide();
         $('.ptt').show();
         $('.bef').show();
+        $('.od, .dv, .tr, .ch, .pt').removeClass('active-cursor')
+        $('.pt').addClass("active-cursor");
     })
-
-
-
 
 
     $('.example-container-image').slick({

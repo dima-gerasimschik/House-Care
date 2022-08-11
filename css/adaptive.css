@@ -1,7 +1,7 @@
 /*1024-1199*/
 @media screen and (max-width: 1199px) {
 
-    #example-images .example-container .example-container-image{
+    #example-images .example-container .example-container-image {
         width: 984px;
         margin: 0 auto;
     }
@@ -31,6 +31,10 @@
     #warranty-desc .warranty-item {
         padding: 30px 20px 30px 19px;
         width: 100%;
+    }
+
+    #warranty .warranty-container #warranty-desc {
+        gap: 20px;
     }
 
     .projects {
@@ -70,7 +74,7 @@
 
 
     .image-info {
-        left: -124px;
+        left: -90px;
     }
 
     #consultation .consultation-container #consultation-image {
@@ -140,7 +144,7 @@
         display: none;
         background-color: rgb(49, 49, 57);
         position: absolute;
-        left: 275px;
+        left: 225px;
         top: 690px;
         width: 58px;
         height: 58px;
@@ -148,10 +152,21 @@
     }
 
 
+    #instruction .instruction-container #instruction-list .list-cart:nth-child(1), #instruction .instruction-container #instruction-list .list-cart:nth-child(4), #instruction .instruction-container #instruction-list .list-cart:nth-child(2), #instruction .instruction-container #instruction-list .list-cart:nth-child(5) {
+        margin-right: 0;
+    }
+
+    #instruction .instruction-container #instruction-list {
+        justify-content: space-between;
+    }
 }
 
 /*768-1023*/
 @media screen and (max-width: 1023px) {
+
+    .slick-center img {
+        margin: 102px 180px;
+    }
 
     #instruction .instruction-container #instruction-list {
         justify-content: space-evenly;
@@ -161,7 +176,7 @@
         left: 35px;
     }
 
-    #example-images .example-container .example-container-image{
+    #example-images .example-container .example-container-image {
         width: 728px;
         margin: 0 auto;
     }
@@ -171,7 +186,15 @@
 /*425-767*/
 @media screen and (max-width: 767px) {
 
-    #example-images .example-container .example-container-image{
+    #entry-container-form #entry-block {
+        padding: 50px 15px;
+    }
+
+    .slick-center img {
+        margin: 102px 79px;
+    }
+
+    #example-images .example-container .example-container-image {
         width: 385px;
         margin: 0 auto;
     }
@@ -332,6 +355,7 @@
     #warranty .warranty-container #warranty-list-container {
         flex-wrap: wrap;
         margin-bottom: 10px;
+        gap: 20px;
     }
 
     #consultation-image {
@@ -409,6 +433,11 @@
         width: 54px;
     }
 
+    #instruction .instruction-container #instruction-list .list-cart, #instruction .instruction-container #instruction-list .list-cart:nth-child(3), #instruction .instruction-container #instruction-list .list-cart:nth-child(6) {
+        width: 326px;
+    }
+
+
     #example-images .example-container .example-container-image .image-card img {
         width: 145px;
     }
@@ -471,7 +500,20 @@
 /*320-425*/
 @media screen and (max-width: 424px) {
 
-    #example-images .example-container .example-container-image{
+    .consultation-error-1, .consultation-error-2, .consultation-error-3 {
+        margin-left: 57px;
+    }
+
+    .entry-error-1, .entry-error-2, .entry-error-3 {
+        margin-left: 57px;
+    }
+
+
+    .slick-center img {
+        margin: 102px 32px;
+    }
+
+    #example-images .example-container .example-container-image {
         width: 290px;
         margin: 0 auto;
     }
@@ -481,7 +523,7 @@
         padding-right: 15px;
     }
 
-    .consultation-input input, .text-items-document button, .projects .projects-text .btn-action button, .projects .projects-text, #consultation .consultation-container #consultation-block, #consultation .consultation-container #consultation-block button {
+    .consultation-input input, .text-items-document button, .projects .projects-text .btn-action button, .projects .projects-text, #consultation .consultation-container #consultation-block, #consultation .consultation-container #consultation-block button, .btn-action button {
         width: 100%;
     }
 
@@ -527,8 +569,12 @@
         height: 50px;
     }
 
-    .main #menu #menu-container #menu-cancel img {
+    .main #menu #menu-container .menu-cancel img {
         width: 30px;
+    }
+
+    .checkbox-text {
+        width: 241px;
     }
 
 }
